@@ -1,0 +1,6 @@
+\\mac\home\documents\visual studio 2015\Projects\UnderstandingArrays\UnderstandingArrays\bin\Debug\UnderstandingArrays.exe.config
+\\mac\home\documents\visual studio 2015\Projects\UnderstandingArrays\UnderstandingArrays\bin\Debug\UnderstandingArrays.exe
+\\mac\home\documents\visual studio 2015\Projects\UnderstandingArrays\UnderstandingArrays\bin\Debug\UnderstandingArrays.pdb
+\\mac\home\documents\visual studio 2015\Projects\UnderstandingArrays\UnderstandingArrays\obj\Debug\UnderstandingArrays.csprojResolveAssemblyReference.cache
+\\mac\home\documents\visual studio 2015\Projects\UnderstandingArrays\UnderstandingArrays\obj\Debug\UnderstandingArrays.exe
+\\mac\home\documents\visual studio 2015\Projects\UnderstandingArrays\UnderstandingArrays\obj\Debug\UnderstandingArrays.pdb

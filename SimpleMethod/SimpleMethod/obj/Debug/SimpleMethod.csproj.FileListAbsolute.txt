@@ -1,0 +1,6 @@
+\\mac\home\documents\visual studio 2015\Projects\SimpleMethod\SimpleMethod\bin\Debug\SimpleMethod.exe.config
+\\mac\home\documents\visual studio 2015\Projects\SimpleMethod\SimpleMethod\bin\Debug\SimpleMethod.exe
+\\mac\home\documents\visual studio 2015\Projects\SimpleMethod\SimpleMethod\bin\Debug\SimpleMethod.pdb
+\\mac\home\documents\visual studio 2015\Projects\SimpleMethod\SimpleMethod\obj\Debug\SimpleMethod.csprojResolveAssemblyReference.cache
+\\mac\home\documents\visual studio 2015\Projects\SimpleMethod\SimpleMethod\obj\Debug\SimpleMethod.exe
+\\mac\home\documents\visual studio 2015\Projects\SimpleMethod\SimpleMethod\obj\Debug\SimpleMethod.pdb

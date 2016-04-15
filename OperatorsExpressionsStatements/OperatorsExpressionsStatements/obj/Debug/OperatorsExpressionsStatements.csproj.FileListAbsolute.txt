@@ -1,0 +1,6 @@
+\\mac\home\documents\visual studio 2015\Projects\OperatorsExpressionsStatements\OperatorsExpressionsStatements\bin\Debug\OperatorsExpressionsStatements.exe.config
+\\mac\home\documents\visual studio 2015\Projects\OperatorsExpressionsStatements\OperatorsExpressionsStatements\obj\Debug\OperatorsExpressionsStatements.csprojResolveAssemblyReference.cache
+\\mac\home\documents\visual studio 2015\Projects\OperatorsExpressionsStatements\OperatorsExpressionsStatements\bin\Debug\OperatorsExpressionsStatements.exe
+\\mac\home\documents\visual studio 2015\Projects\OperatorsExpressionsStatements\OperatorsExpressionsStatements\bin\Debug\OperatorsExpressionsStatements.pdb
+\\mac\home\documents\visual studio 2015\Projects\OperatorsExpressionsStatements\OperatorsExpressionsStatements\obj\Debug\OperatorsExpressionsStatements.exe
+\\mac\home\documents\visual studio 2015\Projects\OperatorsExpressionsStatements\OperatorsExpressionsStatements\obj\Debug\OperatorsExpressionsStatements.pdb

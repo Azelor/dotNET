@@ -1,0 +1,6 @@
+\\mac\home\documents\visual studio 2015\Projects\Decisions\Decisions\bin\Debug\Decisions.exe.config
+\\mac\home\documents\visual studio 2015\Projects\Decisions\Decisions\obj\Debug\Decisions.csprojResolveAssemblyReference.cache
+\\mac\home\documents\visual studio 2015\Projects\Decisions\Decisions\bin\Debug\Decisions.exe
+\\mac\home\documents\visual studio 2015\Projects\Decisions\Decisions\bin\Debug\Decisions.pdb
+\\mac\home\documents\visual studio 2015\Projects\Decisions\Decisions\obj\Debug\Decisions.exe
+\\mac\home\documents\visual studio 2015\Projects\Decisions\Decisions\obj\Debug\Decisions.pdb
