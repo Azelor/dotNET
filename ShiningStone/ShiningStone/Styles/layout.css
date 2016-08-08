@@ -1,0 +1,86 @@
+﻿body 
+{
+    font-family: Verdana, serif;
+    color: #06003f;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+.wrapper
+{
+    margin: 0px auto;
+    width: 770px;
+}
+
+.header
+{
+    background-image: url('/images/header.jpg');
+    width: 770px;
+    height: 150px;
+    text-align: right;
+}
+
+.header h1
+{
+    padding: 15px 40px 0px 0px;
+    font-size: 36pt;
+}
+
+.menu
+{
+    width: 770px;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    background-color: #06003f;
+}
+
+.menulink
+{
+    padding: 5px;
+    margin: 0px 5px 0px 5px;
+}
+
+.menulink a
+{
+    color: White;  
+}
+
+.leftcontent
+{
+    float: left;
+    width: 480px;
+}
+
+.rightcontent
+{
+    float: right;
+    width: 210px;
+}
+
+.fullcontent
+{
+    width: 690px;
+}
+
+.footer
+{
+	width: 770px;
+	border-top: 1px solid #000000;
+	font-size: 9px;
+	text-align: center;
+	padding: 2px;
+	color: #333333;
+}
+
+.clearfloats
+{
+    clear: both;
+}

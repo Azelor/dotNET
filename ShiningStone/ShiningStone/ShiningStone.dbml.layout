@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ShiningStone">
+  <DataContextMoniker Name="/ShiningStoneDataContext" />
+  <nestedChildShapes>
+    <classShape Id="eb6a16d6-bb9b-4474-bf7f-11fe8476c808" absoluteBounds="0.75, 1.625, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/ShiningStoneDataContext/Country" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5972b3f9-a576-4a7c-8e22-8cc798ae7c38" absoluteBounds="0.765, 2.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="20dc6c4b-8e7e-4e21-bb79-ee07a5383e60" absoluteBounds="0.75, 5.25, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/ShiningStoneDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e549b251-e091-4cc1-9cfb-0e89624057d7" absoluteBounds="0.765, 5.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dad5e54e-7c23-4e9d-b237-f9f0158ea140" absoluteBounds="3.5, 1, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/ShiningStoneDataContext/Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d88be2b9-7522-42ae-b02e-3dfcdf37bf7b" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.22199625651042); (3.5 : 2.22199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ShiningStoneDataContext/Country/Country_Order" />
+      <nodes>
+        <classShapeMoniker Id="eb6a16d6-bb9b-4474-bf7f-11fe8476c808" />
+        <classShapeMoniker Id="dad5e54e-7c23-4e9d-b237-f9f0158ea140" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.23159912109375); (4.5 : 6.23159912109375); (4.5 : 3.5401025390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ShiningStoneDataContext/Product/Product_Order" />
+      <nodes>
+        <classShapeMoniker Id="20dc6c4b-8e7e-4e21-bb79-ee07a5383e60" />
+        <classShapeMoniker Id="dad5e54e-7c23-4e9d-b237-f9f0158ea140" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

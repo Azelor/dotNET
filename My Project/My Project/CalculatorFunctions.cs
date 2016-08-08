@@ -9,7 +9,8 @@ namespace My_Project
     {
         public double Add(double FirstNumber, double SecondNumber)
         {
-            return FirstNumber + SecondNumber;
+            return RoundNumber(FirstNumber + SecondNumber);
+
         }
         public double Subtract(double FirstNumber, double SecondNumber)
         {
@@ -23,5 +24,10 @@ namespace My_Project
         {
             return FirstNumber / SecondNumber;
         }
+        private double RoundNumber(double Number)
+        {
+            return Math.Round(Number, 2);
+        }
+
     }
 }
