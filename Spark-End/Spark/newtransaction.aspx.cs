@@ -31,7 +31,7 @@ namespace Spark
         {
             try
             {
-                if (Utilities.GetBlockedCustomers().Contains(DropDownListCustomer.SelectedValue))
+                if (Utilities.GetBlockedCustomers().Contains(DropDownListCustomer.SelectedValue)) 
                 {
                     LabelError.Text = "That customer is currently out of use";
                 }
