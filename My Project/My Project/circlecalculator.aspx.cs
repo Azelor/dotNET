@@ -7,19 +7,13 @@ using System.Web.UI.WebControls;
 
 namespace My_Project
 {
-    public partial class _Default : Page
+    public partial class circlecalculator : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
-            {
-                int Zero = 0;
-                int Error = 1 / Zero;
-            }
-            catch (Exception Ex) 
-            {
-                Response.Write(Ex.Message);
-            }
+            Circle MyCircle = new Circle(50);
+            double MyCircleDiameter = Circle.CalculateDiameter(7.95);
+            Response.Write(MyCircleDiameter);
         }
     }
 }

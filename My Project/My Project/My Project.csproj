@@ -131,6 +131,7 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
     <Content Include="calculator.aspx" />
+    <Content Include="circlecalculator.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -289,6 +290,14 @@
       <DependentUpon>calculator.aspx</DependentUpon>
     </Compile>
     <Compile Include="CalculatorFunctions.cs" />
+    <Compile Include="Circle.cs" />
+    <Compile Include="circlecalculator.aspx.cs">
+      <DependentUpon>circlecalculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="circlecalculator.aspx.designer.cs">
+      <DependentUpon>circlecalculator.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

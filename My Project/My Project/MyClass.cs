@@ -16,7 +16,10 @@ namespace CustomClasses.TestClasses
         public void TestMethod()
         {
             StringBuilder TestStringBuilder = new StringBuilder();
-
+        }
+        public MyClass(int StartingNumber)
+        {
+            IntProperty = StartingNumber;
         }
     }
 }

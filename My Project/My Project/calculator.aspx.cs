@@ -13,27 +13,22 @@ namespace My_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            MyClass MyClassInstance = new MyClass();
+            MyClass MyClassInstance = new MyClass(17);
         }
 
         protected void ButtonCalculate_Click(object sender, EventArgs e)
         {
             double FirstNumber = Convert.ToDouble(TextBoxFirstNumber.Text);
             double SecondNumber = Convert.ToDouble(TextBoxSecondNumber.Text);
-            CalculatorFunctions Functions = new CalculatorFunctions();
-            double Result = Functions.Add(FirstNumber, SecondNumber);
+            double Result = CalculatorFunctions.Add(FirstNumber, SecondNumber);
             LabelResult.Text = Result.ToString();
         }
 
         protected void ButtonCalculate2_Click(object sender, EventArgs e)
         {
-            string PIString = "3.14159265";
-            double PIDouble = Convert.ToDouble(PIString);
-            int CircleRadius = 19;
-            double CircleCircumference = PIDouble * CircleRadius;
-            CircleCircumference = Math.Pow(CircleCircumference, 2);
-            string OutputCircumference = CircleCircumference.ToString();
-            DateTime TodaysDate = DateTime.Now;
+            List<int> ListToTotal = new List<int>() { 12, 17, 135 };
+            int Total = CalculatorFunctions.TotalNumbers(ListToTotal);
+            Response.Write(Total);
         }
     }
 }

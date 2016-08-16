@@ -7,10 +7,19 @@ namespace My_Project
 {
     public class CalculatorFunctions
     {
-        public double Add(double FirstNumber, double SecondNumber)
+        public static int TotalNumbers(List<int> ListToTotal)
         {
-            return RoundNumber(FirstNumber + SecondNumber);
+            int Total = 0;
+            foreach (int NumberToTotal in ListToTotal)
+            {
+                Total = Total + NumberToTotal;
+            }
+            return Total;
+        }
 
+        public static double Add(double FirstNumber, double SecondNumber)
+        {
+            return RoundNumber(FirstNumber + SecondNumber); //Add FirstNumber and SecondNumber
         }
         public double Subtract(double FirstNumber, double SecondNumber)
         {
@@ -20,14 +29,18 @@ namespace My_Project
         {
             return FirstNumber * SecondNumber;
         }
-        public double Divide(double FirstNumber, double SecondNumber)
+        public double Divide(double FirstNumber, double SecondNumber /* Denominator */)
         {
             return FirstNumber / SecondNumber;
         }
-        private double RoundNumber(double Number)
+        /// <summary>
+        /// Rounds a number to two decimal places.
+        /// </summary>
+        /// <param name="Number">Number to be rounded.</param>
+        /// <returns></returns>
+        private static double RoundNumber(double Number)
         {
             return Math.Round(Number, 2);
         }
-
     }
 }
