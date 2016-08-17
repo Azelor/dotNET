@@ -27,7 +27,7 @@ namespace My_Project
         protected void ButtonCalculate2_Click(object sender, EventArgs e)
         {
             List<int> ListToTotal = new List<int>() { 12, 17, 135 };
-            CalculatorFunctions.AddToNumbers(10, ListToTotal);
+            CalculatorFunctions.AddToNumbers(10, ListToTotal); 
             int Total = CalculatorFunctions.TotalNumbers(ListToTotal);
             Response.Write(Total);
         }
