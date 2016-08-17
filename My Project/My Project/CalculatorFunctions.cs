@@ -7,12 +7,24 @@ namespace My_Project
 {
     public class CalculatorFunctions
     {
+        public static void AddToNumbers(int AmountToAdd, List<int> Numbers)
+        {
+            int NumberOfNumbers = Numbers.Count;
+            int Counter = 0;
+            while (Counter < NumberOfNumbers)
+            {
+                Numbers[Counter] = Numbers[Counter] + AmountToAdd;
+                Counter++;
+            }
+        }
+
         public static int TotalNumbers(List<int> ListToTotal)
         {
             int Total = 0;
             foreach (int NumberToTotal in ListToTotal)
             {
                 Total = Total + NumberToTotal;
+
             }
             return Total;
         }
