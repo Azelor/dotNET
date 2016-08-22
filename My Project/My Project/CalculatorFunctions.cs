@@ -47,9 +47,14 @@ namespace My_Project
             int Counter = 0;
             while (Counter < NumberOfNumbers)
             {
+                if (Numbers[Counter] == 17)
+                {
+                    return;
+                }
                 Numbers[Counter] = Numbers[Counter] + AmountToAdd;
                 Counter++;
             }
+            Numbers[0] = Numbers[0] + 999;
         }
     }
 }
