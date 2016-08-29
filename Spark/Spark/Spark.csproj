@@ -39,6 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -100,6 +101,11 @@
     <Compile Include="reports.aspx.designer.cs">
       <DependentUpon>reports.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Spark.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Spark.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Utilities.cs" />
     <Compile Include="viewtransactions.aspx.cs">
       <DependentUpon>viewtransactions.aspx</DependentUpon>
@@ -110,6 +116,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Spark.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Spark.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Spark.dbml.layout">
+      <DependentUpon>Spark.dbml</DependentUpon>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -120,6 +134,9 @@
   <ItemGroup>
     <Folder Include="images\" />
     <Folder Include="scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

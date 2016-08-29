@@ -15,7 +15,7 @@ namespace Spark
             BlockedCustomers.Add("11");
             BlockedCustomers.Remove("11");
             string SecondCustomer = BlockedCustomers[1];
-            return BlockedCustomers;
+            return BlockedCustomers; 
         }
     }
 }

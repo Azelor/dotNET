@@ -31,12 +31,25 @@ namespace Spark
         {
             try
             {
-                if (Utilities.GetBlockedCustomers().Contains(DropDownListCustomer.SelectedValue))
+                if (Utilities.GetBlockedCustomers().Contains(DropDownListCustomer.SelectedValue)) 
                 {
                     LabelError.Text = "That customer is currently out of use";
                 }
                 else
                 {
+                    using (SparkDataContext Data = new SparkDataContext())
+                    {
+                        Invoice NewInvoice = new Invoice();
+                        NewInvoice.CustomerID = 5;
+                        NewInvoice.InvoiceNumber = TextBoxInvoiceNumber.Text;
+                        NewInvoice.InvoiceAmount = Convert.ToDecimal(TextBoxAmount.Text);
+                        NewInvoice.InvoiceTaxAmount = Convert.ToDecimal(TextBoxTaxAmount.Text);
+                        NewInvoice.InvoiceDate = DateTime.Now;
+                        Data.Invoices.InsertOnSubmit(NewInvoice);
+                        Data.SubmitChanges();
+                        PanelAddInvoice.Visible = false;
+                        PanelConfirmAdded.Visible = true;
+                    }
                 }
             }
             catch (Exception Ex)
