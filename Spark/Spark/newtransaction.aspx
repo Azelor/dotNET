@@ -7,11 +7,6 @@
     <title></title>
     <link rel="Stylesheet" href="/styles/layout.css" />
     <link rel="Stylesheet" href="/styles/text.css" />
-    <style type="text/css">
-        .auto-style1 {
-            height: 29px;
-        }
-    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -45,7 +40,7 @@
                                 </WhereParameters>
                             </asp:LinqDataSource>
                             <asp:DropDownList ID="DropDownListCustomer" runat="server" DataTextField="CustomerName" DataValueField="CustomerID" AppendDataBoundItems="True" DataSourceID="LinqDataSourceCustomer">
-                                <asp:ListItem Selected="True">-- Select Customer --</asp:ListItem>
+                                <asp:ListItem>-- Select Customer --</asp:ListItem>
                             </asp:DropDownList>
                         </td>
                     </tr>
@@ -69,10 +64,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style1">
+                        <td>
                             Tax Amount (20%)
                         </td>
-                        <td class="auto-style1">
+                        <td>
                             <asp:TextBox ID="TextBoxTaxAmount" runat="server"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidatorTaxAmount" runat="server" ControlToValidate="TextBoxTaxAmount" ErrorMessage="*"></asp:RequiredFieldValidator>
                             <asp:RangeValidator ID="RangeValidatorTaxAmount" runat="server" ControlToValidate="TextBoxTaxAmount" ErrorMessage="*" MaximumValue="9999" MinimumValue="0.01" Type="Currency"></asp:RangeValidator>

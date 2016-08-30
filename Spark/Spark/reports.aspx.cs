@@ -11,7 +11,19 @@ namespace Spark
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            using (SparkDataContext Data = new SparkDataContext())
+            {
+                var Invoices = Data.Invoices
+                    .OrderBy(Invoice => Invoice.InvoiceDate);
+                GridViewInvoice.DataSource = Invoices;
+                GridViewInvoice.DataBind();
+            }
+        }
+
+        protected void GridViewInvoice_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            GridViewInvoice.PageIndex = e.NewPageIndex;
+            GridViewInvoice.DataBind();
         }
     }
 }

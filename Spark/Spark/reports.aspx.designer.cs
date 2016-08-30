@@ -40,15 +40,6 @@ namespace Spark {
         protected global::System.Web.UI.WebControls.Label LabelReport;
         
         /// <summary>
-        /// LinqDataSourceInvoice control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinqDataSource LinqDataSourceInvoice;
-        
-        /// <summary>
         /// GridViewInvoice control.
         /// </summary>
         /// <remarks>
@@ -56,14 +47,5 @@ namespace Spark {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridViewInvoice;
-        
-        /// <summary>
-        /// DetailsViewInvoice control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DetailsView DetailsViewInvoice;
     }
 }
