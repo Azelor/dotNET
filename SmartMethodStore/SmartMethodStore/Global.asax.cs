@@ -28,6 +28,17 @@ namespace SmartMethodStore
         void Application_Error(object sender, EventArgs e)
         {
             // Code that runs when an unhandled error occurs
+            using (StoreDataContext Data = new StoreDataContext())
+            {
+                Exception ExceptionToLog = Server.GetLastError();
+                Error NewError = new Error();
+                NewError.ErrorMessage = ExceptionToLog.Message;
+                NewError.ErrorStackTrace = ExceptionToLog.StackTrace;
+                NewError.ErrorURL = Request.Url.ToString();
+                NewError.ErrorDate = DateTime.Now;
+                Data.Errors.InsertOnSubmit(NewError);
+                Data.SubmitChanges();
+            }
             Response.Redirect("~/error.aspx");
         }
     }

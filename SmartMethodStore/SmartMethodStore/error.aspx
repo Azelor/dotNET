@@ -5,6 +5,5 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Something went wrong</h2>
-    <p>We're sorry, but something went wrong with your request. 
-        If you continue to have problems, please contact support.</p>
+    <p>We're sorry, but something went wrong with your request. If you continue to have problems, please contact support.</p>
 </asp:Content>
