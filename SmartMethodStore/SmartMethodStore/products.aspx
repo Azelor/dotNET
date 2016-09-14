@@ -7,7 +7,7 @@
     <h2>Products</h2>
     <asp:LinqDataSource ID="LinqDataSourceProduct" runat="server" ContextTypeName="SmartMethodStore.StoreDataContext" EntityTypeName="" OrderBy="ProductName" TableName="Products">
     </asp:LinqDataSource>
-    <asp:GridView ID="GridViewProduct" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="ProductID" DataSourceID="LinqDataSourceProduct" ForeColor="#333333" GridLines="None" ShowHeader="False">
+    <asp:GridView ID="GridViewProduct" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="ProductID" DataSourceID="LinqDataSourceProduct" ForeColor="#333333" GridLines="None" ShowHeader="False" OnRowCommand="GridViewProduct_RowCommand">
         <AlternatingRowStyle BackColor="White" />
         <Columns>
             <asp:ImageField DataImageUrlField="ProductImageUrl">
