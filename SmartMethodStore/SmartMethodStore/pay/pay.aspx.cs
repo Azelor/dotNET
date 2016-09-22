@@ -33,7 +33,6 @@ namespace SmartMethodStore.pay
                 Data.SubmitChanges();
 
                 List<int> Products = (List<int>)Session["Cart"];
-
                 foreach (int ProductID in Products)
                 {
                     OrderProduct NewOrderProduct = new OrderProduct();
@@ -42,9 +41,9 @@ namespace SmartMethodStore.pay
                     Data.OrderProducts.InsertOnSubmit(NewOrderProduct);
                 }
                 Data.SubmitChanges();
-
-                //Send user to payment system here
             }
+
+            //Send user to payment system here
         }
     }
 }

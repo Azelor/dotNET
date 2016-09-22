@@ -13,7 +13,6 @@ namespace SmartMethodStore
         {
 
         }
-
         protected void GridViewProduct_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName == "AddToCart")
@@ -36,16 +35,16 @@ namespace SmartMethodStore
             {
                 string ProductName = TextBoxProductName.Text;
                 decimal? PriceBelow = null;
-                if(TextBoxPriceBelow.Text.Length > 0)
+                if (TextBoxPriceBelow.Text.Length > 0)
                 {
                     PriceBelow = Convert.ToDecimal(TextBoxPriceBelow.Text);
                 }
                 var SearchResults = Data.Products.Where
-                    (Product => 
-                    (Product.ProductName.Contains(ProductName) 
-                    || ProductName.Length == 0) 
-                    && 
-                    (Product.ProductPrice <= PriceBelow 
+                    (Product =>
+                    (Product.ProductName.Contains(ProductName)
+                    || ProductName.Length == 0)
+                    &&
+                    (Product.ProductPrice <= PriceBelow
                     || PriceBelow == null));
                 GridViewProduct.DataSource = SearchResults;
                 GridViewProduct.DataBind();

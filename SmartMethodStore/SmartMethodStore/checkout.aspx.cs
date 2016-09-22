@@ -25,26 +25,27 @@ namespace SmartMethodStore
                 {
                     List<int> Cart = (List<int>)Session["Cart"];
                     var Products = Data.Products.
-                        Where(Product => Cart.Contains(Product.ProductID));
+                    Where(Product => Cart.Contains(Product.ProductID));
                     GridViewProduct.DataSource = Products;
                     GridViewProduct.DataBind();
-                } }
+                }
+            }
         }
 
         protected void GridViewProduct_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            if(e.CommandName == "RemoveFromCart")
+            if (e.CommandName == "RemoveFromCart")
             {
                 int RowClicked = Convert.ToInt32(e.CommandArgument);
                 int ProductID = Convert.ToInt32(GridViewProduct.DataKeys[RowClicked].Value);
                 List<int> ProductsInCart = (List<int>)Session["Cart"];
                 ProductsInCart.Remove(ProductID);
                 Session["Cart"] = ProductsInCart;
-                GetProductsFromCart();
             }
+            GetProductsFromCart();
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void ButtonContinueToPayment_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/pay/pay.aspx");
         }
